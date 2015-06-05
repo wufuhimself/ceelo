@@ -1,0 +1,16 @@
+{
+  "name": "ceelo",
+  "version": "0.0.0",
+  "authors": [
+    "Alex Kates <daniel.alexander.kates@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "angular": "~1.4.0",
+    "firebase": "~2.2.6",
+    "angularfire": "~1.1.1",
+    "fontawesome": "~4.3.0",
+    "bootstrap": "~3.3.4"
+  }
+}
