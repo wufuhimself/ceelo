@@ -1,15 +1,17 @@
 {
   "manifest_version": 2,
 
-  "name": "Getting started example",
-  "description": "This extension shows a Google Image search result for the current page",
+  "name": "Ceelo",
+  "description": "the dice game, not the horrible singer",
   "version": "1.0",
 
   "browser_action": {
-    "default_popup": "app.html"
+    "default_popup": "app/app.html"
   },
-  "permissions": [
-    "activeTab",
-    "https://ajax.googleapis.com/"
-  ]
+  "content_security_policy": "script-src 'self' https://cdn.firebase.com https://*.firebaseio.com; object-src 'self'",
+  "permissions": ["identity", "https://accounts.google.com/*", "https://www.googleapis.com/*"],
+  "oauth2": {
+    "client_id": "802791224080-u7k5p37mnlob5b57jqhna6g4a7fe5i75.apps.googleusercontent.com",
+    "scopes": ["https://www.googleapis.com/auth/plus.login"]
+  }
 }
